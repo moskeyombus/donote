@@ -16,6 +16,7 @@
 * Create the database
     ```
     bundle exec rake db:create
+    
     bundle exec rake db:schema:load
     ```
 
