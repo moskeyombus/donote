@@ -1,3 +1,37 @@
 // Place all the styles related to the Site controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.signup-role-image {
+    height: 46.5vh;
+    width: 100vw;
+}
+
+.fan-img {
+    background-image: url(crowd_grey_blurred.png);
+    font-family: 'Josefin Slab', serif;
+    &:hover {
+        background-image: url(crowd_red.png);
+        cursor: pointer;
+    }
+}
+
+.musician-img {
+    background-image: url(musician_grey.png);
+    font-family: 'Satisfy', cursive;
+    &:hover {
+        background-image: url(solo_musician_color.png);
+        cursor: pointer;
+    }
+}
+
+.fan-img,.musician-img {
+    height: 46.5vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    text-align: center;
+    font-size: 4em;
+    padding-top: 10%;
+}
