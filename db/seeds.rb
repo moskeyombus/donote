@@ -5,3 +5,24 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+10.times do |index|
+    Fan.create(
+        :name          => Faker::Name.name,
+        :user_attributes => {
+            :email    => Faker::Internet.email,
+            :password => Faker::Internet.password
+        }
+    )
+end
+
+10.times do |index|
+    Artist.create(
+        :name          => Faker::Name.name,
+        :user_attributes => {
+            :email    => Faker::Internet.email,
+            :password => Faker::Internet.password
+        }
+    )
+end
