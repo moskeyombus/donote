@@ -1,2 +1,16 @@
-<h1>Fans#new</h1>
-<p>Find me in app/views/fans/new.html.erb</p>
+
+.row
+  .col-xs-2
+  .col-xs-8
+    .new-fan-container
+      %p.new-fan-header New Fan
+      = form_for @fan do |f|
+        .name-header Name
+        = f.text_field :name, label: 'Name'
+        = fields_for :user do |m|
+          .email-header Email
+          = m.text_field :email, label: 'Email'
+          .password-header Password
+          = m.password_field :password, label: 'Password'
+        = f.submit 'Submit', class: 'btn btn-success'
+  .col-xs-2

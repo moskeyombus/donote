@@ -23,4 +23,5 @@
             = link_to content_tag(:i,nil, class: 'fa fa-user right-nav-link pull-right'), edit_user_registration_path
           - else
             = link_to content_tag(:i,nil, class: 'fa fa-sign-in right-nav-link pull-right'), new_user_session_path
-    = yield
+    .container-fluid
+      = yield

@@ -1,8 +1,11 @@
 
-/ = image_tag("crowd_grey_blurred.png", class: "img-responsive signup-role-image")
-/ = image_tag("musician_grey.png", class: "img-responsive signup-role-image")
-
-.fan-img
-    %p.fan-signup-text Fan
-.musician-img
-    %p.musician-signup-text Musician
+.row
+  .col-xs-12
+    .fan-container
+      = link_to image_tag('', :class => "img-responsive fan-img"), new_fan_path
+      %p.fan-text Fan
+.row
+  .col-xs-12
+    .artist-container
+      = link_to image_tag('', :class => "img-responsive artist-img"), new_artist_path
+      %p.artist-text Artist

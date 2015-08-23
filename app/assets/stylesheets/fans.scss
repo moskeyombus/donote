@@ -1,3 +1,38 @@
 // Place all the styles related to the Fans controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.new-fan-container {
+    margin-top: 2%;
+    background-image: url(crowd_red.png);
+    height: 80vh;
+    border: 4px solid darken(red,20%);
+    border-radius: 20px;
+    padding: 40px;
+    color: darken(white,5%);
+
+    .new-fan-header {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    input {
+        color: black;
+        display: block;
+        margin: 3% 0;
+        border-radius: 5px;
+        height: 40px;
+        width: 50%;
+        text-align: center;
+    }
+
+    .btn {
+        margin-top: 10%;
+        margin-left: 25%;
+    }
+}
+
+.new-fan-img {
+    opacity: 0.9;
+}
