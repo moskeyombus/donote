@@ -1,9 +1,13 @@
 class FansController < ApplicationController
   def new
     @fan = Fan.new
+    @user = @fan.build_user
   end
 
+  #Cant figure out how to create the fan with nested user attributes
+
   def create
+    binding.pry
     @fan = Fan.new(fan_params)
     if @fan.save
       message = "Fan Created Successfully!"
@@ -19,8 +23,9 @@ class FansController < ApplicationController
 
   private
 
+  #temporary whitelist all for troubleshooting
   def fan_params
-    params.require(:fan).permit(:name, user_attributes: [ :id, :email, :password ])
+    params.require(:fan).permit!
   end
 
 end

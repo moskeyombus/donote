@@ -4,13 +4,13 @@
   .col-xs-8
     .new-fan-container
       %p.new-fan-header New Fan
-      = form_for @fan do |f|
+      = simple_form_for @fan do |f|
         .name-header Name
         = f.text_field :name, label: 'Name'
-        = fields_for :user do |m|
+        = f.simple_fields_for @user do |u|
           .email-header Email
-          = m.text_field :email, label: 'Email'
+          = u.text_field :email, label: 'Email'
           .password-header Password
-          = m.password_field :password, label: 'Password'
+          = u.password_field :password, label: 'Password'
         = f.submit 'Submit', class: 'btn btn-success'
   .col-xs-2
