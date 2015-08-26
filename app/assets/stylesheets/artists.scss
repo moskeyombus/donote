@@ -1,3 +1,37 @@
 // Place all the styles related to the Artists controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.new-artist-container {
+    margin-top: 2%;
+    background-image: url(solo_musician_color.png);
+    height: 80vh;
+    border: 4px solid darken(blue,20%);
+    border-radius: 20px;
+    padding: 40px;
+    color: darken(white,5%);
+
+    .new-artist-header {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    input {
+        color: black;
+        display: block;
+        margin: 3% 0;
+        border-radius: 5px;
+        height: 40px;
+        width: 50%;
+        text-align: center;
+    }
+
+    .btn {
+        margin-top: 3%;
+        margin-left: 25%;
+    }
+}
+
+.new-artist-img {
+    opacity: 0.9;
+}
